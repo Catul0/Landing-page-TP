@@ -24,7 +24,7 @@ const Carousel: React.FC = () => {
     dots: true,
     infinite: true,
     speed: 900,
-    slidesToShow: 1.5,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
   };
@@ -80,13 +80,14 @@ const Carousel: React.FC = () => {
         </Slider>
       </div>
     </div>
-    <div className='mb-24 mt-16 pb-16 px-24 2xl:px-[350px] lg:hidden ' id='testimonios2'>
+    {/*de aca para abajo esta el responsiv */}
+    <div className='mb-24 mt-16 pb-16 px-4  lg:hidden ' id='testimonios2'>
 
       <div className='text-center mb-16'>
         <div className= "m-auto">
-          <h2 className="text-[36px]"><b>Trusted by Thousands of Happy Customer</b></h2>
+          <h2 className="text-[30px]"><b>Trusted by Thousands of Happy Customer</b></h2>
         </div>
-        <div className="  m-auto">
+        <div className="  m-auto text-[20px]">
           <p>These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
         </div>
       </div>

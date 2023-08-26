@@ -97,7 +97,7 @@ export default function Formulario() {
                     <h2 className="text-[36px]"><b>Contact With Us!</b></h2>
                 </div>
             </div>
-            <form className=' px-24 2xl:px-[350px]  py-8  m-auto  text-[18px] ' onSubmit={handleSubmit(onSubmit)}>
+            <form className='  py-8  m-auto  text-[18px] ' onSubmit={handleSubmit(onSubmit)}>
                 <div className=" w-[95%] m-auto">
                     <div className="w-[80%] m-auto mt-8">
                         <p >Name:</p>

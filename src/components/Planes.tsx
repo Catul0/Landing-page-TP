@@ -3,13 +3,13 @@ import TarjetaPlanes from './TarjetaPlanes'
 
 export const Planes = () => {
     return (
-        <div className=' px-24 2xl:px-[350px] bg-blue-300 py-8 mt-16 ' id='precios'>
+        <div className=' lg:px-24 2xl:px-[350px] bg-blue-300 py-8 mt-16 ' id='precios'>
             <div className="text-center place-items-center ">
                 <div className="w-[80%] m-auto">
-                    <h2 className="text-[36px]"><b>Choose Your Plan</b></h2>
+                    <h2 className="text-[30px] lg:text-[36px]"><b>Choose Your Plan</b></h2>
                 </div>
                 <div className="w-[80%]  m-auto">
-                    <p>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+                    <p className='text-[20px] lg:text-[20px]'>Let's choose the package that is best for you and explore it happily and cheerfully.</p>
                 </div>
             </div>
             <div className=' hidden lg:flex  mt-8 place-content-around'>

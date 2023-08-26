@@ -4,7 +4,7 @@ import location from "../../public/location-icon.svg"
 const Numeros = () => {
     return (
         <>
-            <div className="lg:flex place-content-around  mt-24  drop-shadow-2xl px-24 2xl:px-[350px]">
+            <div className="lg:flex place-content-around  mt-8 lg:mt-24  drop-shadow-2xl lg:px-24 2xl:px-[350px]">
                     <div className="flex place-content-between lg:place-content-center w-[100%] lg:w-[400px]  bg-white lg:rounded-l-xl ">
                         <img src={location} alt="icono hubicacion"></img>
                         <div className="pl-4 text-end pr-4 lg:text-center">
