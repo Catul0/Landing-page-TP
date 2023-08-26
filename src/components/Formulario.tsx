@@ -43,13 +43,13 @@ export default function Formulario() {
     return (
         <>
         {/* ESTA ACA ES LA VERSION DESCKTOP*/}
-        <div className="hidden lg:block w-[80%] m-auto  bg-blue-300 rounded-lg">
+        <div className="hidden lg:block w-[80%] m-auto  bg-blue-300 rounded-lg" id="formulario">
             <div className='text-center  mt-8 pt-8 '>
                 <div className="w-[50%] m-auto">
                     <h2 className="text-[36px]"><b>Contact With Us!</b></h2>
                 </div>
             </div>
-            <form className=' px-24 2xl:px-[350px]  py-8  m-auto  ' onSubmit={handleSubmit(onSubmit)}>
+            <form className=' px-24 2xl:px-[350px]  py-8  m-auto text-[18px] ' onSubmit={handleSubmit(onSubmit)}>
                 <div className="flex w-[80%] m-auto">
                     <div className="w-[33%] m-auto mt-8">
                         <p >Name:</p>
@@ -57,12 +57,12 @@ export default function Formulario() {
                         <p>{errors.name?.message}</p>
                     </div>
                     <div className="w-[33%] m-auto mt-8">
-                        <p >Username</p>
+                        <p >Username:</p>
                         <input className="w-[98%] rounded-lg"{...register("username")} />
                         <p>{errors.username?.message}</p>
                     </div>
                     <div className="w-[33%] m-auto mt-8">
-                        <p >Age</p>
+                        <p >Age:</p>
                         <input type="number" className="w-[98%] rounded-lg"{...register("age")} />
                         <p>{errors.age?.message}</p>
                     </div>
@@ -91,13 +91,13 @@ export default function Formulario() {
             </form>
         </div>
         {/*ESTA ACA ES LA VERSION MOBILE O RESPONSIVE  */}
-        <div className=" lg:hidden bg-blue-300">
+        <div className=" lg:hidden bg-blue-300 " id="formulario2">
             <div className='text-center  mt-8 pt-8 '>
                 <div className="w-[80%] m-auto">
                     <h2 className="text-[36px]"><b>Contact With Us!</b></h2>
                 </div>
             </div>
-            <form className=' px-24 2xl:px-[350px]  py-8  m-auto  ' onSubmit={handleSubmit(onSubmit)}>
+            <form className=' px-24 2xl:px-[350px]  py-8  m-auto  text-[18px] ' onSubmit={handleSubmit(onSubmit)}>
                 <div className=" w-[95%] m-auto">
                     <div className="w-[80%] m-auto mt-8">
                         <p >Name:</p>
@@ -105,12 +105,12 @@ export default function Formulario() {
                         <p>{errors.name?.message}</p>
                     </div>
                     <div className="w-[80%] m-auto mt-8">
-                        <p >Username</p>
+                        <p >Username:</p>
                         <input className="w-[98%] rounded-lg"{...register("username")} />
                         <p>{errors.username?.message}</p>
                     </div>
                     <div className="w-[80%] m-auto mt-8">
-                        <p >Age</p>
+                        <p >Age:</p>
                         <input type="number" className="w-[98%] rounded-lg"{...register("age")} />
                         <p>{errors.age?.message}</p>
                     </div>

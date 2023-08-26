@@ -58,7 +58,7 @@ const TarjetaPlanes = (props: planProps) => {
 
 
         
-        <div className={`elemento ${nombre === 'Premium Plan' ? 'mt-8 max-w-sm rounded overflow-hidden shadow-lg w-[100%] pt-8 border-[3px] rounded-xl border-red-500 bg-white lg:hidden' : 'mt-8 lg:hidden bg-white max-w-sm rounded overflow-hidden shadow-lg w-[100%] pt-8  border rounded-xl border-grey-500'}`}>
+        <div className={`elemento ${nombre === 'Premium Plan' ? 'mt-8 max-w-md m-auto rounded overflow-hidden shadow-lg w-[100%] pt-8 border-[3px] rounded-xl border-red-500 bg-white lg:hidden' : 'mt-8 lg:hidden max-w-md m-auto bg-white rounded overflow-hidden shadow-lg w-[100%] pt-8  border rounded-xl border-grey-500'}`}>
             <div className='flex place-content-center '>
                 <img className="w-30" src={imagen} alt="Sunset in the mountains " />
             </div>
