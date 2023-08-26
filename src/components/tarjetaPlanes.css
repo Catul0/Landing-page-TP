@@ -1,0 +1,9 @@
+
+.button-container {
+    display: flex;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
