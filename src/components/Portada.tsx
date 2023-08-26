@@ -3,7 +3,7 @@ import { ayuda } from './NavBar'
 const Portada = () => {
     return (
         <>
-        <div className=" mt-8 pt-16 2xl:px-[350px] " id="portada">
+        <div className=" mt-8 pt-16  " id="portada">
             <section className="lg:hidden">
                 <img src={imagenPortada} alt="imagenPortada"></img>
                 <div className=" bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 pt-4 flex flex-col justify-between leading-normal">
@@ -18,7 +18,7 @@ const Portada = () => {
                         </div>
                 </div>
             </section>
-            <section className="hidden lg:flex mt-4 " >
+            <section className="hidden px-24 2xl:px-[350px] lg:flex mt-4 " >
                 <div className="max-w-sm w-full lg:max-w-full lg:flex">
                     <div className=" bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 pt-4 flex flex-col justify-between leading-normal">
                         <div className="mb-8">
