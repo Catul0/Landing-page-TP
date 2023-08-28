@@ -97,7 +97,7 @@ export default function Formulario() {
                         <textarea className=" w-[100%] rounded-lg" {...register("mensaje")} />
                         <p>{errors.mensaje?.message}</p>
                     </div>
-                    <input className="block border border-red-600 rounded-full  botonSuave text-red text-[22px] w-[80%] h-[40px] m-auto mt-4" type="submit" />
+                    <input className="block border  cursor-pointer border-red-600 rounded-full  botonSuave text-red text-[22px] w-[80%] h-[40px] m-auto mt-4" type="submit" value="Send" />
                 </div>
             </form>
         </div>

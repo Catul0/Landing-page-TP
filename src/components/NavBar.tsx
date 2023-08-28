@@ -63,10 +63,10 @@ const NavBar = () => {
             </ul>
             <ul className=" hidden lg:flex text-[18px] md:place-content-around">
                 <button onClick={ayuda} className="md:pl-4 md:pr-4 whitespace-nowrap">
-                    <a className="block py-2 px-4 text-blue-800 text-[22px] " href="#">Sign In</a>
+                    <a className="block py-2 px-4 text-blue-800 text-[22px] " >Sign In</a>
                 </button>
                 <button onClick={ayuda} className="md:pl-4 md:pr-4 whitespace-nowrap">
-                    <a className="block border border-red-600 rounded-full py-2 px-4 botonSuave text-red text-[22px]  " href="#">Sign Up</a>
+                    <a className="block border border-red-600 rounded-full py-2 px-4 botonSuave text-red text-[22px]  " >Sign Up</a>
                 </button>
             </ul>
         </div >
@@ -130,12 +130,12 @@ const NavBar = () => {
                     <ul className={`${clickMenu ? 'hidden' : ''} text-[18px] grid justify-items-end pr-16 `}>
                         <div>
                             <button onClick={ayuda} className=" whitespace-nowrap">
-                                <a className="block text-blue-800 text-[20px] " href="#">Sign In</a>
+                                <a className="block text-blue-800 text-[20px] " >Sign In</a>
                             </button>
                         </div>
                         <div>
                             <button onClick={ayuda} className="whitespace-nowrap">
-                                <a className="block   text-red text-[20px]  " href="#">Sign Up</a>
+                                <a className="block   text-red text-[20px]  " >Sign Up</a>
                             </button>
                         </div>
                     </ul>

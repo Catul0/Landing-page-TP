@@ -52,7 +52,7 @@ const TarjetaPlanes = (props: planProps) => {
 
             </div>
             <div className="buttonClass button-container mb-[100px]">
-                <a className="block border border-red-600 rounded-full py-2 text-center botonSuave text-red text-[22px] w-28 " onClick={ayuda} href="#">Select</a>
+                <a className="block border border-red-600 rounded-full py-2 text-center botonSuave text-red text-[22px] w-28 " onClick={ayuda}>Select</a>
             </div>
         </div>
 
@@ -84,7 +84,7 @@ const TarjetaPlanes = (props: planProps) => {
 
             </div>
             <div className="buttonClass button-container mb-8">
-                <a className="block border border-red-600 rounded-full py-2 text-center botonSuave text-red text-[22px] w-28 " onClick={ayuda} href="#">Select</a>
+                <a className="block border border-red-600 rounded-full py-2 text-center botonSuave text-red text-[22px] w-28 " onClick={ayuda} >Select</a>
             </div>
         </div>
         </>
