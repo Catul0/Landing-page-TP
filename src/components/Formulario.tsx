@@ -58,7 +58,7 @@ export default function Formulario() {
                 <div className="w-[50%] m-auto">
                     <h2 className="text-[36px]"><b>Contact With Us!</b></h2>
                 </div>
-                {mensajeEnviado? <p className="bg-green-300 w-[80%] lg:w-[500px] rounded-lg m-auto">EL MENSAJE A SIDO ENVIADO CON EXITO</p>: <p></p>}
+                {mensajeEnviado? <p className="bg-green-300 w-[80%] lg:w-[500px] rounded-lg m-auto">Thank you for contacting us! We will get back to you as soon as possible.</p>: <p></p>}
             </div>
             <form className='px-4 lg:px-24 2xl:px-[350px]  py-8  m-auto text-[18px] ' onSubmit={handleSubmit(onSubmit)}>
                 <div className="lg:flex lg:w-[80%] m-auto">
