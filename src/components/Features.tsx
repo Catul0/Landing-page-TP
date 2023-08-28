@@ -5,7 +5,7 @@ const Features = () => {
         <>
             <section className="hidden lg:flex mt-24 px-24 2xl:px-[350px] " id="features" >
                 <div className="max-w-sm w-full lg:max-w-full lg:flex">
-                    <img className="h-40vh lg:h-auto lg:w-40vh flex-none bg-cover  lg:rounded-t-none lg:rounded-l text-center overflow-hidden" src={imagenPortada}></img>
+                    <img className="h-40vh lg:h-auto lg:w-40vh flex-none bg-cover  lg:rounded-t-none lg:rounded-l text-center overflow-hidden" src={imagenPortada} alt="Imagen Features"></img>
                     <div className=" bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 pt-4 flex flex-col  leading-normal w-[600px] place-item-center">
                         <div className=" mb-8 w-[350px]">
                             <div className="text-gray-900 font-bold text-[30px] mb-2"><b>We Provide Many Features You Can Use</b></div>

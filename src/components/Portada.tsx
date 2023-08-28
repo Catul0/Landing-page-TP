@@ -31,7 +31,7 @@ const Portada = () => {
                             </button>
                         </div>
                     </div>
-                    <img className="h-40vh lg:h-auto lg:w-40vh flex-none bg-cover  lg:rounded-t-none lg:rounded-l text-center overflow-hidden" src={imagenPortada} title="Woman holding a mug"></img>
+                    <img className="h-40vh lg:h-auto lg:w-40vh flex-none bg-cover  lg:rounded-t-none lg:rounded-l text-center overflow-hidden" src={imagenPortada} title="Imagen Portada"></img>
                 </div>
             </section>
             
