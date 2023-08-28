@@ -9,10 +9,10 @@ export function ayuda(): void {
 }
 
 const NavBar = () => {
-    const [menuClicked, setMenuClicked] = useState<boolean>(true);
+    const [clickMenu, setClickMenu] = useState<boolean>(true);
 
     const clickBotonMenu = () => {
-        setMenuClicked(prevState => !prevState);
+        setClickMenu(prevState => !prevState);
         console.log("click")
     };
     return (
@@ -85,7 +85,7 @@ const NavBar = () => {
                     </div>
                 </div>
                 <div>
-                    <ul className={`${menuClicked ? 'hidden' : ''} block md:pl-8 pr-16 pt-4 text-[20px] w-100 md:items-center grid justify-items-end   `}>
+                    <ul className={`${clickMenu ? 'hidden' : ''} block md:pl-8 pr-16 pt-4 text-[20px] w-100 md:items-center grid justify-items-end   `}>
                         <li className="cursor-pointer" >
                             <Link className="pl-4  " activeClass="active" onClick={clickBotonMenu}
                                 to="portada"
@@ -127,7 +127,7 @@ const NavBar = () => {
                                 duration={500} >Help</Link>
                         </li>
                     </ul>
-                    <ul className={`${menuClicked ? 'hidden' : ''} text-[18px] grid justify-items-end pr-16 `}>
+                    <ul className={`${clickMenu ? 'hidden' : ''} text-[18px] grid justify-items-end pr-16 `}>
                         <div>
                             <button onClick={ayuda} className=" whitespace-nowrap">
                                 <a className="block text-blue-800 text-[20px] " href="#">Sign In</a>

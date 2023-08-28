@@ -28,7 +28,7 @@ const TarjetaPlanes = (props: planProps) => {
         <>
         <div className={`elemento ${nombre === 'Premium Plan' ? 'hidden lg:block max-w-sm rounded overflow-hidden shadow-lg w-[30%] pt-[100px] border-[3px] rounded-xl border-red-500 bg-white' : ' hidden lg:block bg-white max-w-sm rounded overflow-hidden shadow-lg w-[30%] pt-[100px] border rounded-xl border-grey-500'}`}>
             <div className='flex place-content-center '>
-                <img className="w-30" src={imagen} alt="Sunset in the mountains " />
+                <img className="w-44" src={imagen} alt="imagen tarjeta " />
             </div>
             <div className="px-6 py-4 text-center min-h-fit min-h-[260px]">
                 <div className="font-bold text-xl mb-2">{nombre}</div>
@@ -60,7 +60,7 @@ const TarjetaPlanes = (props: planProps) => {
         
         <div className={`elemento ${nombre === 'Premium Plan' ? 'mt-8 max-w-md m-auto rounded overflow-hidden shadow-lg w-[100%] pt-8 border-[3px] rounded-xl border-red-500 bg-white lg:hidden' : 'mt-8 lg:hidden max-w-md m-auto bg-white rounded overflow-hidden shadow-lg w-[100%] pt-8  border rounded-xl border-grey-500'}`}>
             <div className='flex place-content-center '>
-                <img className="w-30" src={imagen} alt="Sunset in the mountains " />
+                <img className="w-40" src={imagen} alt="imagen tarjeta " />
             </div>
             <div className="px-6 py-4 text-center min-h-fit min-h-[260px]">
                 <div className="font-bold text-xl mb-2">{nombre}</div>
