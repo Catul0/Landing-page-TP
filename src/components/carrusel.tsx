@@ -3,13 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ComentariosCarrousel from './ComentariosCarrousel';
-import { useEffect, useState } from "react";
+import useGetTestimonials from '../hooks/use-get-testimonials'; 
 
-type Testimonial = {
-  avatar: string;
-  fullName: string;
-  testimonial: string;
-};
 
 const Carousel: React.FC = () => {
   const settings = {
@@ -28,35 +23,11 @@ const Carousel: React.FC = () => {
     slidesToScroll: 1,
     autoplay: true,
   };
-  const BASE_URL = "https://6xrb5goi1l.execute-api.us-east-1.amazonaws.com";
-  const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string>();
 
-  useEffect(() => {
-    setLoading(true);
-    fetch(`${BASE_URL}/api/testimonial`)
-      .then((response) => {
-        response.json().then((result) => {
-          setTestimonials(result);
-        });
-      })
-      .catch((error) => {
-        setError(error.message);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) {
-    return <p>loading...</p>;
-  }
-
-  if (error) {
-    return <p>{error}</p>;
-  }
+  const {testimonials} = useGetTestimonials();
+  
   return (
+    
     <>
     <div className='mb-24 mt-16 pb-16 px-24 2xl:px-[350px] hidden lg:block' id='testimonios'>
 
