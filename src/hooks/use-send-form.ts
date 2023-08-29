@@ -14,7 +14,7 @@ const useSendForm = () => {
         email: yup.string().required("Email is a required field").email("It must be an email format, with '@' and '.something' "),
         name: yup.string().required("Name is a required field").max(15),
         username: yup.string().required("Username is a required field").max(15),
-        phone: yup.string().required("Phone is a required field").max(15, "De, necesitas un secretario para que se acuerde de semejante numero"),
+        phone: yup.string().required("Phone is a required field").min(9).max(15, "Debes necesitas un secretario para que se acuerde de semejante numero"),
         age: yup.string().required("Age is a required field").max(2, "Dale flaco, mas de 100 años tenes?"),
     }).required();
 
