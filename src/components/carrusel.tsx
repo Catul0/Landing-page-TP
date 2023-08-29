@@ -1,9 +1,9 @@
+import useGetTestimonials from '../hooks/use-get-testimonials'; 
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ComentariosCarrousel from './ComentariosCarrousel';
-import useGetTestimonials from '../hooks/use-get-testimonials'; 
 
 
 const Carousel: React.FC = () => {
@@ -24,7 +24,7 @@ const Carousel: React.FC = () => {
     autoplay: true,
   };
 
-  const {testimonials} = useGetTestimonials();
+  const {result} = useGetTestimonials();
   
   return (
     
@@ -41,7 +41,7 @@ const Carousel: React.FC = () => {
       </div>
       <div>
         <Slider {...settings}>
-          {testimonials.map((testimonial) => (
+          {result.map((testimonial) => (
             <div className="card" key={testimonial.fullName}>
 
               <ComentariosCarrousel imagen={testimonial.avatar} nombre={testimonial.fullName} comentario={testimonial.testimonial} />
@@ -64,7 +64,7 @@ const Carousel: React.FC = () => {
       </div>
       <div className='m-auto'>
         <Slider {...settings2}>
-          {testimonials.map((testimonial) => (
+          {result.map((testimonial) => (
             <div className="card" key={testimonial.fullName}>
 
               <ComentariosCarrousel imagen={testimonial.avatar} nombre={testimonial.fullName} comentario={testimonial.testimonial} />

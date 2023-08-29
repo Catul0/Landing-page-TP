@@ -2,7 +2,6 @@
 type comentariosProps={
   imagen:string,
   nombre:string,
-
   comentario:string
 };
 const ComentariosCarrousel = (props:comentariosProps) => {
