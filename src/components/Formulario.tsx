@@ -1,54 +1,16 @@
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+import useSendForm from "../hooks/use-send-form";
 import "./botones.css";
-import { useState } from "react";
 
-const BASE_URL =
-    "https://6xrb5goi1l.execute-api.us-east-1.amazonaws.com";
-const schema = yup.object({
 
-    mensaje: yup.string().required("Message is a required field").max(200, "es un maximode 200 caracteres"),
-    email: yup.string().required("Email is a required field"),
-    name: yup.string().required("Name is a required field").max(15),
-    username: yup.string().required("Username is a required field").max(15),
-    phone: yup.string().required("Phone is a required field").max(15, "we, necesitas un secretario para que se acuerde de semejante numero"),
-    age: yup.string().required("Age is a required field").max(2, "dale flaco, mas de 100 años tenes?"),
-}).required();
-
-type FormData = yup.InferType<typeof schema>;
 
 export default function Formulario() {
-    const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
-        resolver: yupResolver(schema)
-    });
-    const [mensajeEnviado, setMensajeEnviado] = useState(false) 
-    const onSubmit = (data: FormData) => {
-        fetch(`${BASE_URL}/api/send-email`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        })
-            .then((response) => {
-                if (response.ok) {
-                    setMensajeEnviado(mensajeEnviadoo()) ;
-                    console.log('Comentario enviado con éxito', response.json());
-                } else {
-                    console.error('Error al enviar el comentario');
-                }
-            })
-            .catch((error) => {
-                console.error('Error en la petición:', error);
-            });
-    }
-    function mensajeEnviadoo():boolean{
-        setTimeout(()=>{
-            setMensajeEnviado(false);
-          }, 7000);
-        return true;
-    }
+    const {
+        onSubmit,
+        errors,
+        register,
+        handleSubmit,
+        mensajeEnviado,
+    }=useSendForm()
     return (
         <>
         
