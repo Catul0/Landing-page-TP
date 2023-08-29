@@ -13,16 +13,14 @@ export default function Formulario() {
     }=useSendForm()
     return (
         <>
-        
-        {/* ESTA ACA ES LA VERSION DESCKTOP*/}
-        <div className=" w-[80%] m-auto  bg-blue-300 rounded-lg" id="formulario">
+        <div className=" lg:px-24 2xl:px-[350px] min-w-[80%] bg-blue-300" id="formulario">
             <div className='text-center  mt-8 pt-8 '>
                 <div className="w-[50%] m-auto">
                     <h2 className="text-[36px]"><b>Contact With Us!</b></h2>
                 </div>
                 {mensajeEnviado? <p className="bg-green-300 w-[80%] lg:w-[500px] rounded-lg m-auto">Thank you for contacting us! We will get back to you as soon as possible.</p>: <p></p>}
             </div>
-            <form className='px-4 lg:px-24 2xl:px-[350px]  py-8  m-auto text-[18px] ' onSubmit={handleSubmit(onSubmit)}>
+            <form className='px-4 lg:px-24 py-8  m-auto text-[18px] ' onSubmit={handleSubmit(onSubmit)}>
                 <div className="lg:flex lg:w-[80%] m-auto">
                     <div className="lg:w-[33%] m-auto mt-8">
                         <p >Name:</p>
