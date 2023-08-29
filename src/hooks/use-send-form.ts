@@ -10,12 +10,12 @@ const useSendForm = () => {
         "https://6xrb5goi1l.execute-api.us-east-1.amazonaws.com";
     const schema = yup.object({
 
-        mensaje: yup.string().required("Message is a required field").max(200, "es un maximode 200 caracteres"),
-        email: yup.string().required("Email is a required field"),
+        mensaje: yup.string().required("Message is a required field").max(200, "Es un maximode 200 caracteres"),
+        email: yup.string().required("Email is a required field").email("It must be an email format, with '@' and '.something' "),
         name: yup.string().required("Name is a required field").max(15),
         username: yup.string().required("Username is a required field").max(15),
-        phone: yup.string().required("Phone is a required field").max(15, "we, necesitas un secretario para que se acuerde de semejante numero"),
-        age: yup.string().required("Age is a required field").max(2, "dale flaco, mas de 100 años tenes?"),
+        phone: yup.string().required("Phone is a required field").max(15, "De, necesitas un secretario para que se acuerde de semejante numero"),
+        age: yup.string().required("Age is a required field").max(2, "Dale flaco, mas de 100 años tenes?"),
     }).required();
 
     type FormData = yup.InferType<typeof schema>;
