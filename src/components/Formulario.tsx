@@ -24,17 +24,17 @@ export default function Formulario() {
                 <div className="lg:flex lg:w-[80%] m-auto">
                     <div className="lg:w-[33%] m-auto mt-8">
                         <p >Name:</p>
-                        <input placeholder="Malcolm" className="w-[98%] rounded-lg" {...register("name")} />
+                        <input placeholder="Malcolm" className="px-2 w-[98%] rounded-lg" {...register("name")} />
                         <p className="bg-red-500 text-center rounded-lg w-[98%] mt-1">{errors.name?.message}</p>
                     </div>
                     <div className="lg:w-[33%] m-auto mt-8">
                         <p >Username:</p>
-                        <input placeholder="Graves" className="w-[98%] rounded-lg"{...register("username")} />
+                        <input placeholder="Graves" className="px-2 w-[98%] rounded-lg"{...register("username")} />
                         <p className="bg-red-500 text-center rounded-lg w-[98%] mt-1">{errors.username?.message}</p>
                     </div>
                     <div className="lg:w-[33%] m-auto mt-8">
                         <p >Age:</p>
-                        <input placeholder="36" type="number" className="w-[98%] rounded-lg"{...register("age")} />
+                        <input placeholder="36" type="number" className="px-2 w-[98%] rounded-lg"{...register("age")} />
                         <p className="bg-red-500 text-center rounded-lg w-[98%] mt-1">{errors.age?.message}</p>
                     </div>
 
@@ -42,19 +42,19 @@ export default function Formulario() {
                 <div className="lg:flex lg:w-[80%] m-auto">
                     <div className="lg:w-[50%] m-auto mt-8">
                         <p>Email:</p>
-                        <input type="email" className="w-[98%] rounded-lg"{...register("email")} placeholder="magraves@lasles.com" />
+                        <input type="email" className="px-2 w-[98%] rounded-lg"{...register("email")} placeholder="magraves@lasles.com" />
                         <p className="bg-red-500 text-center rounded-lg w-[98%] mt-1">{errors.email?.message}</p>
                     </div>
                     <div className="lg:w-[50%] m-auto mt-8">
                         <p>Phone:</p>
-                        <input type="number" className="w-[98%] rounded-lg"{...register("phone")} placeholder="+11 2233 445566" />
+                        <input type="number" className="px-2 w-[98%] rounded-lg"{...register("phone")} placeholder="+11 2233 445566" />
                         <p className="bg-red-500 text-center rounded-lg w-[98%] mt-1">{errors.phone?.message}</p>
                     </div>
                 </div>
                 <div className=" lg:w-[80%] m-auto">
                     <div className=" w-[99%] m-auto  mt-8">
                         <p>Your message:</p>
-                        <textarea placeholder="Put your message here!" className=" w-[100%] rounded-lg" {...register("mensaje")} />
+                        <textarea placeholder="Put your message here!" className="px-2 w-[100%] rounded-lg" {...register("mensaje")} />
                         <p className="bg-red-500 text-center rounded">{errors.mensaje?.message}</p>
                     </div>
                     <input className="block border  cursor-pointer border-red-600 rounded-full  botonSuave text-red text-[22px] w-[80%] h-[40px] m-auto mt-4" type="submit" value="Send" />
